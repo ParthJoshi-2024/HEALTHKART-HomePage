@@ -1,0 +1,428 @@
+/* Global Settings */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+
+.left{
+    float : left;
+}
+
+.right{
+    float: right;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Generic CSS  - that remains same on all the pages of that project*/
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header{
+    padding-top: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+#header .logo{
+    width: 18%;
+
+}
+
+#header .logo h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#header .logo h1 a{
+    color: #00BFBF;
+
+}
+
+#header .logo h1 a span{
+    background-color: #00BFBF;
+    color: #fff;
+    padding: 6px 3px;
+    display: inline-block;
+}
+
+
+#header .search{
+    width: 35%;
+    position: relative;
+}
+
+#header .search input{
+    width: 100%;
+    height: 35px;
+}
+
+#header .search button{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    left: 10px;
+    top: 10%;
+}
+
+#header .user-links{
+    width: 45%;
+
+}
+
+#header .user-links ul li{
+    display: inline-block;
+    font-size: 13px;
+    padding: 10px 0px;
+
+}
+
+#header .user-links ul li a {
+    color: #000;
+    padding: 0px 16px;
+    border-right: 1px solid #000;
+
+}
+
+#header .user-links ul li a:hover{
+    background-color: #f7f7f7;
+    color: #03abab;
+
+}
+
+#header .user-links li:last-child{  
+    font-size: 20px;
+}
+
+#header .user-links li:last-child a{
+    border-right: none;
+}
+
+#container .user-links{
+    margin-bottom: 20px;
+}
+
+#main-nav .nav-wrapper {
+    position: relative;
+}
+
+.wrapper .products .product:hover {
+    background-color: rgb(237, 237, 235);
+    
+}
+
+#main-nav ul.menu > li{
+    display: inline-block;
+}
+
+#main-nav .dropdown{
+    position: absolute;
+    background-color: #fff;
+    width: 70%;
+    left: 0px;
+}
+
+.nav-wrapper .menu .dropdown {
+    display: none;
+}
+
+.nav-wrapper .menu li:hover .dropdown{
+    display: block;
+    
+}
+
+.nav-wrapper .menu li:hover {
+    background-color: rgb(213, 227, 227);
+}
+
+#main-nav .dropdown ul li a{
+    display: block;
+    padding: 15px 10px 15px 30px;
+    
+}
+
+#main-nav ul.menu > li a{
+    display: block;
+    padding: 15px 20px;
+    color: #1d1d1d;
+    font-size: 14px;
+}
+
+
+
+
+
+/* For Banner */
+#banner{
+    margin-bottom: 35px;
+
+}
+
+#main{
+
+
+}
+
+#sidebar{
+
+}
+
+/* Specific CSS */
+
+.products{
+    background-color: #F8F8F8;
+    padding: 10px;
+    
+}
+
+.product{
+    display: inline-block;
+    background-color: #fff;
+    width: 21%;
+    margin: 0px 5px;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+
+.product .sale-left{
+    font-size: 12px;
+    width: 75%;
+}
+
+
+
+.product .sale-icon{
+    width: 25%;
+}
+
+.product .units-border {
+    background-color: #e2e2ea;
+    height: 4px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.product .units-border::before{
+    content: "";
+    position: absolute;
+    width: 35%;
+    left: 0px;
+    height: 100%;
+    background-color: #fb8c00;
+}
+
+.product .product-img{
+    text-align: center;
+}
+
+.product .product-discount{
+    margin-bottom: 40px;
+}
+
+.product .product-title h4{
+    color: #25292b;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.product .product-rating{
+    margin-bottom: 10px;
+
+}
+
+.product .product-price{
+    margin-bottom: 10px;
+}
+
+.product .product-price .clear .price .text-muted{
+    margin-left: 10px;
+}
+
+
+.product .product-premium{
+    background-color: rgb(187,234,232,.31);
+    padding: 10px;
+}
+
+.product .product-discount span{
+    border: 1px solid #fb8c00;
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 13px;
+    color: #fb8c00;
+}
+
+
+.section{
+    margin-bottom: 50px;
+}
+
+.section .wrapper{
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 16%);
+}
+
+.section .wrapper .header{
+    background-color: #fff;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.section .wrapper .header:after{
+    content: "";
+    /* border: 1px solid #f7f7f7; */
+    background-color: rgba(0,0,0,.1607843137254902);
+    position: absolute;
+    width: 94%;
+    height: 1px;
+    left: 3%;
+    bottom: 0px;
+    
+
+}
+
+#footer-container{
+    background-color: #1d1d1d;
+    color: #fff;
+    height: 500px;
+    
+}
+
+#footer-container .container .logo{
+    padding-top: 50px;
+    
+}
+#footer-container .container .logo h1{
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+    /* padding: auto; */
+    font-weight: 500;
+
+    
+}
+
+#footer-container .container .logo h1 span{
+    background-color: #00BFBF;
+    color: #fff;
+    display: inline-block;
+}
+
+#footer-container .container ul li a{
+    color: #00BFBF;
+    
+    
+}
+
+#footer-container .container ul li {
+    margin-top:10px;
+}
+
+#footer-container .container .footer-col-2:last-child ul li {
+    margin-bottom: 23px;
+}
+
+#footer-container h6{
+    font-size: 16px;
+    
+}
+
+#footer-container .clear .footer-col-1 {
+    display: inline;
+    font-weight: 400;
+    padding: 10px;
+    width: 15%;
+    /* margin-right: 10px; */
+}
+
+#footer-container .clear .footer-col-2 {
+    padding: 5px;
+    display: inline;
+    font-weight: 400;
+    padding: 10px;
+    /* margin-right: 10px; */
+    width: 20%;
+}
+
+#footer-container .footer-col-2 .icon {
+    margin-right: 8px;
+}
+
+#footer-container .clear ul li a:hover{
+    color: #F8F8F8;
+}
+
+
+#footer-container .footer-images div{
+    margin: 8px;
+    
+}
+
+#footer-container .footer-images{
+    border-bottom: 3px solid #00BFBF;
+    
+}
+
+#footer-container .footer-nav .navigations li{
+    display: inline-block;
+    color: #fff;
+
+
+}
+
+#footer-container .footer-nav .navigations li a{
+    color: #f7f7f7;
+    margin: 5px ;
+    
+}
+
+#footer-container .footer-nav .navigations li a:hover{
+    color: red;
+}
+
+#footer-container .footer-nav .navigations li p{
+    display: inline;
+
+}
+
+
+#footer-container .footer-nav {
+    margin: 10px 260px 20px 160px;
+}
+
+/* Code Ends Here */
